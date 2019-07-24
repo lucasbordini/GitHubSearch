@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e3w-4Z-HEz">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="VGN-QH-qY3">
+            <objects>
+                <viewController storyboardIdentifier="aboutViewController" id="EVJ-oF-dYr" customClass="AboutViewController" customModule="GitHubSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aFt-Ss-8FK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUr-fH-cPk">
+                                <rect key="frame" x="32" y="152" width="350" height="530"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxc-di-7JY" customClass="iCarousel">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="530"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nxc-di-7JY" firstAttribute="leading" secondItem="fUr-fH-cPk" secondAttribute="leading" id="DaY-bJ-8f9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nxc-di-7JY" secondAttribute="bottom" id="ELz-lr-f1I"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nxc-di-7JY" secondAttribute="trailing" id="ng4-W0-EgL"/>
+                                    <constraint firstItem="Nxc-di-7JY" firstAttribute="top" secondItem="fUr-fH-cPk" secondAttribute="top" id="viV-QZ-Rvy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b8-d8-xzO">
+                                <rect key="frame" x="12" y="384.5" width="34" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="LPb-SH-veG"/>
+                                    <constraint firstAttribute="width" secondItem="5b8-d8-xzO" secondAttribute="height" multiplier="70:133" id="mml-RX-QHr"/>
+                                </constraints>
+                                <state key="normal" image="ic_back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="EVJ-oF-dYr" eventType="touchUpInside" id="alO-X5-abe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F31-WD-vuF">
+                                <rect key="frame" x="368" y="384.5" width="34" height="65"/>
+                                <state key="normal" image="ic_next"/>
+                                <connections>
+                                    <action selector="goNext:" destination="EVJ-oF-dYr" eventType="touchUpInside" id="64f-lx-gYz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fUr-fH-cPk" firstAttribute="leading" secondItem="EKN-Y4-oKk" secondAttribute="leading" constant="32" id="30k-Ne-3HR"/>
+                            <constraint firstItem="F31-WD-vuF" firstAttribute="width" secondItem="5b8-d8-xzO" secondAttribute="width" id="61X-PQ-8xI"/>
+                            <constraint firstItem="fUr-fH-cPk" firstAttribute="top" secondItem="EKN-Y4-oKk" secondAttribute="top" constant="64" id="Fkm-iB-qnW"/>
+                            <constraint firstItem="5b8-d8-xzO" firstAttribute="centerY" secondItem="Nxc-di-7JY" secondAttribute="centerY" id="Oet-h8-Ys3"/>
+                            <constraint firstItem="5b8-d8-xzO" firstAttribute="leading" secondItem="EKN-Y4-oKk" secondAttribute="leading" constant="12" id="RQH-KN-RRU"/>
+                            <constraint firstItem="F31-WD-vuF" firstAttribute="height" secondItem="5b8-d8-xzO" secondAttribute="height" id="Yod-Sp-6VS"/>
+                            <constraint firstItem="F31-WD-vuF" firstAttribute="centerY" secondItem="Nxc-di-7JY" secondAttribute="centerY" id="aVL-aJ-pMt"/>
+                            <constraint firstItem="EKN-Y4-oKk" firstAttribute="trailing" secondItem="fUr-fH-cPk" secondAttribute="trailing" constant="32" id="bwY-Vx-m3m"/>
+                            <constraint firstItem="EKN-Y4-oKk" firstAttribute="bottom" secondItem="fUr-fH-cPk" secondAttribute="bottom" constant="180" id="cXy-Gi-mt4"/>
+                            <constraint firstItem="EKN-Y4-oKk" firstAttribute="trailing" secondItem="F31-WD-vuF" secondAttribute="trailing" constant="12" id="h1G-Yf-nle"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EKN-Y4-oKk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="XIf-gy-kQS"/>
+                    <connections>
+                        <outlet property="backButton" destination="5b8-d8-xzO" id="VTH-XZ-7um"/>
+                        <outlet property="carouselView" destination="Nxc-di-7JY" id="1ii-n7-bQt"/>
+                        <outlet property="containerView" destination="fUr-fH-cPk" id="iH6-kH-amL"/>
+                        <outlet property="nextButton" destination="F31-WD-vuF" id="7Yi-Kg-rWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7O-4R-UAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="89"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B7J-Wk-mCu">
+            <objects>
+                <navigationController id="e3w-4Z-HEz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6o5-ha-BPu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EVJ-oF-dYr" kind="relationship" relationship="rootViewController" id="c4V-xn-dvQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6T-UT-kuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-920" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="70" height="133"/>
+        <image name="ic_next" width="70" height="133"/>
+    </resources>
+</document>

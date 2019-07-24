@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - MapleBacon (5.4.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - MapleBacon (~> 5.4.0)
+  - RxCocoa (~> 4.5)
+  - RxSwift (~> 4.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MapleBacon
+    - RxCocoa
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  MapleBacon: 7b9933fac2f234b68bb6aaec41256474eed3a845
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: d05f0c2574092702d0a6b00a144fe6e1bb0bb84b
+
+COCOAPODS: 1.7.2
